@@ -1,0 +1,20 @@
+server:
+    port: 9090
+spring:
+    profiles:
+        active: dev
+    data:
+        mongodb:
+            database: kotlin-graphql
+            port: 27017
+
+graphql:
+    servlet:
+        mapping: /graphql
+        enabled: true
+
+    playground:
+        mapping: /playground
+        endpoint: /graphql
+        enabled: true
+        pageTitle: Playground
